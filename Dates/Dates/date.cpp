@@ -7,12 +7,13 @@ using std::cout;
 using std::cin;
 int global;
 
-Date::Date() : month("January"), day(1), year(2001) {}
+Date::Date() : month("January"), day(1), year(2001) { cout << "INSIDE CONST" << endl; }
 
 Date::Date(string m, int d, int y) 
 {
 	if (!validateDate(m, d, y))
 	{
+		cout << "IF FALSE" << endl;
 		Date();
 	}
 	else
@@ -20,6 +21,7 @@ Date::Date(string m, int d, int y)
 		month = m;
 		day = d;
 		year = y;
+		cout << "MONTH IS :" << month << " DAY IS: " << day << " YEAR IS: " << year << endl;
 	}
 }
 
@@ -37,24 +39,29 @@ bool Date::validateDate(string m, int d, int y)
 		{
 			index = x;
 			global = x;
-			cout << "x " << x << "global " << global << endl;
-			if (d < 1 || d > monthDays[x])
+			cout << "x " << x << " global " << global << " Index " << index << endl;
+			if (d < 1 && d > monthDays[index])
 			{
+				cout << "FALSE 1" << endl;
 				return false;
 			}
 			if (y < MIN_YEAR || y > MAX_YEAR)
 			{
+				cout << "FALSE 2" << endl;
 				return false;
 			}
+
 			break;
 		}
 	}
 	if (index == NULL)
 	{
+		cout << "IF NULL" << endl;
 		return false;
 	}
 	else
 	{
+		cout << " IF NOT NULL" << endl;
 		return true;
 	}
 }
