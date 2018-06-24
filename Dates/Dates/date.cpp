@@ -28,7 +28,7 @@ Date::Date(string m, int d, int y)
 bool Date::validateDate(string m, int d, int y)
 {
 	cout << "size is " << sizeof(monthStrAbbrev) / sizeof(monthStrAbbrev[0]) << endl;;
-	int index = NULL;
+	int index = -1;
 
 	for (int x = 0; x < 11; x++)
 	{
@@ -54,7 +54,7 @@ bool Date::validateDate(string m, int d, int y)
 			break;
 		}
 	}
-	if (index == NULL)
+	if (index == -1)
 	{
 		cout << "IF NULL" << endl;
 		return false;
@@ -80,7 +80,7 @@ void Date::print(DateFormat type)
 	{
 		cout << year + "-" << (global + 1) + "-" << day << endl;
 	}
-	else if (type = ymd2)
+	else if (type == ymd2)
 	{
 		cout << year + "-" << month + "-" << day << endl;
 	}
