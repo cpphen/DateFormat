@@ -30,7 +30,7 @@ bool Date::validateDate(string m, int d, int y)
 	cout << "size is " << sizeof(monthStrAbbrev) / sizeof(monthStrAbbrev[0]) << endl;;
 	int index = -1;
 
-	for (int x = 0; x < 11; x++)
+	for (int x = 0; x < 12; x++)
 	{
 		string mAbr = monthStr[x].substr (0, 3);
 		transform(mAbr.begin(), mAbr.end(), mAbr.begin(), (int(*) (int)) tolower);
@@ -40,7 +40,7 @@ bool Date::validateDate(string m, int d, int y)
 			index = x;
 			global = x;
 			cout << "x " << x << " global " << global << " Index " << index << endl;
-			if (d < 1 && d > monthDays[index])
+			if (d < 1 || d > monthDays[index])
 			{
 				cout << "FALSE 1" << endl;
 				return false;
@@ -74,14 +74,14 @@ void Date::print(DateFormat type)
 	}
 	else if (type == mdy2)
 	{
-		cout << monthStr[global] << day + ", " << year << endl;
+		cout << monthStr[global] << " " << day + ", " << year << endl;
 	}
 	else if (type == ymd1)
 	{
-		cout << year + "-" << (global + 1) + "-" << day << endl;
+		cout << year << "-" << (global + 1) << "-" << day << endl;
 	}
 	else if (type == ymd2)
 	{
-		cout << year + "-" << month + "-" << day << endl;
+		cout << year << "-" << month << "-" << day << endl;
 	}
 }
