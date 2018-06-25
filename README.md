@@ -13,11 +13,15 @@ Requirements to run program.
     -> On right menu for "SubSystem" make sure "Console (/SUBSYSTEM:CONSOLE)" is selected.
 
 
-//Date format console application.
-//Print user entered date in four different formats.
+Date format console application.
+Prints user entered date in four different formats.
+
 (1) mm/dd/yyyy, where mm is the two (or one) digit month , dd is the two (or one) digit day, and yyyy is the four digit year
+
 (2) month dd, yyyy, where month is the full month name, dd is the two (or one digit day), and yyyy is the four digit year 
+
 (3) yyyy-mm-dd, where yyyy is the four digit year, mm is the two (or one) digit month, and dd is the two (or one) digit day.
+
 (4) yyyy-mon-dd, where yyyy is the four digit year, mon is the 3-letter month abbrevisation (all lower case), and dd is the two (or one) digit day
 
 The user must enter the 3 letter abbrevation for the month. E.g January would be "Jan", "JaN" etc.
