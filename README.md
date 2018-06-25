@@ -1,4 +1,5 @@
 Requirements to run program. 
+    
     1) Download Visual Studio 2017 and make sure to install C++ in setup. 
     2) Once installed, clone repository and open the file with .sln extension. 
     3) ctrl + F5 will run the console application.
