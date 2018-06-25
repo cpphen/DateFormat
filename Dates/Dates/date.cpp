@@ -27,7 +27,7 @@ bool Date::validateDate(string m, int d, int y)
 {
 	int index = -1;
 
-	for (int x = 0; x < (sizeof(monthStrAbbrev) / sizeof(monthStrAbbrev[0])); x++)
+	for (int x = 0; x < (sizeof(monthStr) / sizeof(monthStr[0])); x++)
 	{
 		string mAbr = monthStr[x].substr (0, 3);
 		transform(mAbr.begin(), mAbr.end(), mAbr.begin(), (int(*) (int)) tolower);

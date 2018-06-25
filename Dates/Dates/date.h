@@ -15,10 +15,7 @@ const string monthStr[] =   //alternative:  const char monthStr[] [15]=
 { "January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November",
 "December" };
-const string monthStrAbbrev[] =
-{ "jan", "feb", "mar", "apr", "may", "jun",
-"jul", "aug", "sep", "oct", "nov",
-"dec" };
+
 const int monthDays[] =
 { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
