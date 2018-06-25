@@ -3,9 +3,13 @@ Requirements to run program.
 2) Once installed, clone repository and open the file with .sln extension. 
 3) ctrl + F5 will run the console application.
 4) If application closes before output can be seen, click on "projects" tab on at top of VS 2017
+    
     -> Go down to "dates properties"
+    
     -> On left menu, go into "Configuartion Properties" then go into "Linker"
+    
     -> Click on "System" 
+    
     -> On right menu for "SubSystem" make sure "Console (/SUBSYSTEM:CONSOLE)" is selected.
 
 
