@@ -29,5 +29,5 @@ Prints user entered date in four different formats.
 
 The user must enter the 3 letter abbrevation for the month. E.g January would be "Jan", "JaN" etc.
 
-If the day entered for the month is not valid for the month, day will default to 1, year to 2001, and month default to January.
-If year is less than 1900 or greater than 2020, year will default to 2001, day to 1 and month to January.
+    -> If the day entered for the month is not valid for the month, day will default to 1, year to 2001, and month default to January.
+    -> If year is less than 1900 or greater than 2020, year will default to 2001, day to 1 and month to January.
