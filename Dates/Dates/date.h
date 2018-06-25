@@ -15,7 +15,7 @@ const string monthStr[] =   //alternative:  const char monthStr[] [15]=
 { "January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November",
 "December" };
-const string monthStrAbbrev[] =  //not strictly necessary, but helpful
+const string monthStrAbbrev[] =
 { "jan", "feb", "mar", "apr", "may", "jun",
 "jul", "aug", "sep", "oct", "nov",
 "dec" };
@@ -28,8 +28,8 @@ private:
 	string month;
 	int day, year;
 	bool validateDate(string, int, int);
-	Date();
 public:
+	Date();
 	Date(string, int, int);
 	void print(DateFormat type);
 };
